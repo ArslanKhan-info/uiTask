@@ -1,0 +1,53 @@
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: thin;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 14px;
+  }
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  textarea {
+    resize: none;
+  }
+  ul,
+  li,
+  ol {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+    //   color: $black;
+    }
+  }
+  li,
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    // color:$black
+  }
+
+  
+  

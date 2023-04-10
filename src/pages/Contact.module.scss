@@ -1,0 +1,88 @@
+@import '../asset/scss/ver&mixing';
+
+.container{
+    padding:0 15px
+}
+
+.profile_details{
+    margin-top: 34px;
+    padding: 0 10px;
+    display: flex;
+}
+.profile_pic{
+    width: 71px;
+    height: 73px;
+    border-radius: 100px;
+    flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.social{
+    margin-left: 20px;
+}
+.link{
+  margin: 5px 10px;
+  width: 25px;
+}
+.save_btn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8px;
+width: 125px;
+height: 28px;
+background: #6C2BD9;
+border-radius: 8px;
+color:#fff;
+flex: none;
+order: 1;
+flex-grow: 0;
+border:none;
+outline: none;
+}
+
+.userName{
+    margin-top:10px ;
+}
+
+.greyText{
+    width: 30px;
+height: 14px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: #6B7280;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-top:5px ;
+}
+.discription{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.listItem{
+    display: flex;
+    padding: 9px 0;
+
+    .logo{
+        width:60px;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .title{
+        width:30%
+    }
+    .feature{
+        text-align: right;
+        flex:1
+    }
+}
+.blue{
+    color:$themeColor
+}

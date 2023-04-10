@@ -1,0 +1,17 @@
+@import '../../asset//scss//ver&mixing';
+
+.cont{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: -250px;
+    width: 200px;
+    background-color: $textGrey;
+    z-index: 2;
+    transition: all .5s ease-in;
+    color: #000;
+}
+.show{
+    right: 0px;
+    transition: all .5s ease-out;
+}

@@ -1,0 +1,95 @@
+@import '../../asset/scss/ver&mixing';
+.wrp{
+    padding: 32px 0;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+.theme_text{
+    color: $textGrey;
+}
+.imageLogo{
+    width: 22px;
+    height: 22px;
+}
+.actionContainer{
+    display: flex;
+    align-items: center;
+}
+.actionImage{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin: 0 9px;
+    margin-right: 20px;
+}
+.collaps_icon{
+    display: inline-block;
+    .menu_icon{
+        position: relative;
+        width:18px;
+        height:13px;
+        transform:rotate(0deg);
+        z-index: 999;
+        
+    }
+}
+.bar1{
+    position: fixed;
+    width: 100%;
+    height: 2px;
+    background-color: $grey;
+    transition: all .2S ease-in-out;
+}
+.bar2,.bar2_1{
+    @extend .bar1;
+    top:7px
+}
+.bar3{
+    @extend .bar1;
+    top:14px
+}
+.show{
+    .bar1{
+        top:7px;
+        background-color: transparent ;
+        // transition: all 2S ease-in-out;
+    }
+    .bar3{
+        bottom: -7px;
+        background-color: transparent ;
+    }
+    .bar2{
+        transform: rotate(45deg);
+        background-color: $grey;
+        // transition: all 2S ease-in-out;
+    }
+    .bar2_1{
+        transform: rotate(-45deg);
+        background-color: $grey ;
+        // transition: all 2S ease-in-out;
+    }
+}
+
+
+
+.themeContainer{
+    height: 0px;
+    transition: all .2s ease-in;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    overflow-y: hidden;
+    img{
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }
+}
+.showTheme{
+    height: 20px;
+    margin: 10px 0;
+}
